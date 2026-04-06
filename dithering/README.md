@@ -9,3 +9,4 @@ learn more about dithering, actually implement different techniques with a few b
 ## references:
 
 - https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/
+- https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html
