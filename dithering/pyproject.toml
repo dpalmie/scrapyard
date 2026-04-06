@@ -1,0 +1,9 @@
+[project]
+name = "dithering"
+version = "0.1.0"
+description = "simple exploration of dithering"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pillow>=12.2.0",
+]
