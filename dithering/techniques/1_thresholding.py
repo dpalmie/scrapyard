@@ -17,7 +17,7 @@ outputImage = Image.new("L", (grayImageWidth, grayImageHeight))
 for x in range(grayImageWidth):
     for y in range(grayImageHeight):
         pixelVal = grayImagePixels[x, y]
-        # print(pixelVal)
+
         if pixelVal <= 127:
             outputImage.putpixel((x, y), 0)
         else:
