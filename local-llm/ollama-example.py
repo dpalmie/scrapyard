@@ -1,6 +1,7 @@
 import asyncio
 
 from ollama import AsyncClient, ChatResponse, chat
+from openai import OpenAI
 
 # ollama must be installed and running
 # (install with
@@ -72,8 +73,28 @@ async def run_async_stream_response():
         print(chunk.message.content, end="", flush=True)
 
 
+def run_openai_format():
+    # this works since ollama is background service running on port 11434
+    # and supports openai format natively
+    client = OpenAI(
+        base_url="http://localhost:11434/v1",
+        api_key="ollama",
+    )
+
+    response = client.chat.completions.create(
+        model="gemma4:e2b",
+        messages=[
+            {"role": "system", "content": "You are a helpful local AI."},
+            {"role": "user", "content": "What is the capital of France?"},
+        ],
+    )
+
+    return response.choices[0].message.content
+
+
 if __name__ == "__main__":
     # print(run_sync_response())
     # run_stream_response()
     # print(asyncio.run(run_async_response()))
-    asyncio.run(run_async_stream_response())
+    # asyncio.run(run_async_stream_response())
+    print(run_openai_format())
