@@ -1,1 +1,7 @@
 .DS_STORE
+
+local-llm/image/inputs/*
+!local-llm/image/inputs/.gitkeep
+
+local-llm/audio/outputs/*
+!local-llm/audio/outputs/.gitkeep

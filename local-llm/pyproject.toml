@@ -5,7 +5,7 @@ description = "testing out local inference"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "mlx-audio>=0.4.2",
+    "mlx-audio[all,server]>=0.4.2",
     "mlx-vlm>=0.4.4",
     "ollama>=0.6.1",
     "openai>=2.32.0",

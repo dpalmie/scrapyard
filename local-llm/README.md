@@ -9,5 +9,5 @@ Success criteria:
 
 - [X] text input, text output
 - [X] text + image input, text output
-- [ ] text input, audio output
+- [X] text input, audio output
 - [ ] benchmarks
