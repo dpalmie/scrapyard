@@ -8,6 +8,6 @@ Trying out the following providers:
 Success criteria:
 
 - [X] text input, text output
-- [ ] text + image input, text output
+- [X] text + image input, text output
 - [ ] text input, audio output
 - [ ] benchmarks
