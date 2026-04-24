@@ -1,12 +1,13 @@
 Trying out the following providers:
 
-- [ ] llama.cpp
+- [X] llama.cpp
 - [X] ollama (simpler wrapper of llama.cpp)
-- [ ] mlx
-- [ ] unsloth
+- [X] mlx
+- [X] unsloth (more for fine-tuning, out of scope for now)
 
 Success criteria:
 
-- [ ] text input, text output
+- [X] text input, text output
 - [ ] text + image input, text output
 - [ ] text input, audio output
+- [ ] benchmarks
